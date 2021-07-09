@@ -16,7 +16,7 @@
           <h2 class="inquiry-title"><span class="line">生年月日</span></h2>
           <div class="c-select-wrap">
             <select id="year_s" name="yeaar">
-              <option v-for="(year, key) in years" v-bind:key="key">
+              <option v-for="(year, key) in years" v-bind:key="key" v-bind:value="year">
                 {{ year }}
               </option>
             </select>
@@ -25,7 +25,7 @@
 
           <div class="c-select-wrap">
             <select id="month_s" name="month">
-              <option v-for="m of 12" :key="m" :value="m + '月'">
+              <option v-for="m of 12" v-bind:key="m" v-bind:value="m + '月'">
                 {{ m }}
               </option>
             </select>
@@ -34,7 +34,7 @@
 
           <div class="c-select-wrap">
             <select id="day_s" name="day">
-              <option v-for="d of 31" :key="d" :value="d + '日'">
+              <option v-for="d of 31" v-bind:key="d" v-bind:value="d + '日'">
                 {{ d }}
               </option>
             </select>
