@@ -1,6 +1,6 @@
 <template>
   <div class="c-link-btn-wrap" v-bind:class="addClass">
-    <a class="c-link-btn" v-bind:href="to">{{ message }}</a>
+    <router-link class="c-link-btn" v-bind:to="to">{{ message }}</router-link>
   </div>
 </template>
 
