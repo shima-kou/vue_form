@@ -8,7 +8,7 @@
       <div class="input-wrapper">
         <div class="box">
           <h2 class="inquiry-title"><span class="line">ご相談内容</span></h2>
-          <textarea id="messageArea" cols="30" rows="10" v-model="message"></textarea>
+          <textarea id="messageArea" cols="30" rows="10" v-model="$store.state.message"></textarea>
         </div>
       </div>
     </div>
@@ -28,15 +28,6 @@ export default {
   components: {
     linkButton,
   },
-  computed: {
-    message: {
-      get() {
-        return this.$store.state.message;
-      },
-      set(value) {
-        this.$store.commit('updateMessage', value);
-      },
-    },
-  },
+  computed: {},
 };
 </script>

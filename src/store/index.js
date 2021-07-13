@@ -40,4 +40,30 @@ export default new Vuex.Store({
       state.message = message;
     },
   },
+  getters: {
+    getGender(state) {
+      return state.gender;
+    },
+    getYear(state) {
+      return state.year;
+    },
+    getMonth(state) {
+      return state.month;
+    },
+    getDay(state) {
+      return state.day;
+    },
+    getJoin(state) {
+      return state.join;
+    },
+    getHospitalization(state) {
+      return state.hospitalization;
+    },
+    getContinuation(state) {
+      return state.continuation;
+    },
+    getMessage(state) {
+      return state.message;
+    },
+  },
 });
