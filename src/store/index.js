@@ -15,28 +15,28 @@ export default new Vuex.Store({
     message: '',
   },
   mutations: {
-    updateGender: (state, gender) => {
+    updateGender(state, gender) {
       state.gender = gender;
     },
-    updateYear: (state, year) => {
+    updateYear(state, year) {
       state.year = year;
     },
-    updateMonth: (state, month) => {
+    updateMonth(state, month) {
       state.month = month;
     },
-    updateDay: (state, day) => {
+    updateDay(state, day) {
       state.day = day;
     },
-    updateJoin: (state, join) => {
+    updateJoin(state, join) {
       state.join = join;
     },
-    updateHospitalization: (state, hospitalization) => {
+    updateHospitalization(state, hospitalization) {
       state.hospitalization = hospitalization;
     },
-    updateContinuation: (state, continuation) => {
+    updateContinuation(state, continuation) {
       state.continuation = continuation;
     },
-    updateMessage: (state, message) => {
+    updateMessage(state, message) {
       state.message = message;
     },
   },
