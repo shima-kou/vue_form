@@ -9,47 +9,47 @@
         <div class="box">
           <h2 class="inquiry-title"><span class="line">性別</span></h2>
           <p class="input-result">
-            {{ $store.state.gender }}
+            {{ $store.getters.getGender }}
           </p>
         </div>
 
         <div class="box">
           <h2 class="inquiry-title"><span class="line">生年月日</span></h2>
-          <div class="c-select-wrap">{{ $store.state.year }}</div>
-          <div class="c-select-wrap">{{ $store.state.month }}</div>
-          <div class="c-select-wrap">{{ $store.state.day }}</div>
+          <div class="c-select-wrap">{{ $store.getters.getYear }}</div>
+          <div class="c-select-wrap">{{ $store.getters.getMonth }}</div>
+          <div class="c-select-wrap">{{ $store.getters.getDay }}</div>
         </div>
 
         <div class="box">
           <h2 class="inquiry-title">現在、生命保険に加入されていますか？</h2>
           <p class="input-result">
-            {{ $store.state.join }}
+            {{ $store.getters.getJoin }}
           </p>
         </div>
 
         <div class="box">
           <h2 class="inquiry-title">現在入院中ですか。または、３ヶ月以内に医師の診察・検査の結果、入院・手術をすすめられたことはありますか。</h2>
           <p class="input-result">
-            {{ $store.state.hospitalization }}
+            {{ $store.getters.getHospitalization }}
           </p>
         </div>
 
         <div class="box">
           <h2 class="inquiry-title">過去5年以内に、病気やけがで手術を受けたことまたは継続して7日以上の入院をしたことがありますか？</h2>
           <p class="input-result">
-            {{ $store.state.continuation }}
+            {{ $store.getters.getContinuation }}
           </p>
         </div>
         <div class="box">
           <h2 class="inquiry-title"><span class="line">ご相談内容</span></h2>
           <p class="input-result">
-            {{ $store.state.message }}
+            {{ $store.getters.getMessage }}
           </p>
         </div>
       </div>
     </div>
     <div class="link-wrap">
-      <linkButton to="/step2/" message="前へ戻る" addClass="back-btn"></linkButton>
+      <linkButton to="/step3/" message="前へ戻る" addClass="back-btn"></linkButton>
       <linkButton to="/" message="送信"></linkButton>
     </div>
   </div>

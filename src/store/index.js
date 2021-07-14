@@ -15,29 +15,56 @@ export default new Vuex.Store({
     message: '',
   },
   mutations: {
-    updateGender(state, gender) {
+    updateGender: (state, gender) => {
       state.gender = gender;
     },
-    updateYear(state, year) {
+    updateYear: (state, year) => {
       state.year = year;
     },
-    updateMonth(state, month) {
+    updateMonth: (state, month) => {
       state.month = month;
     },
-    updateDay(state, day) {
+    updateDay: (state, day) => {
       state.day = day;
     },
-    updateJoin(state, join) {
+    updateJoin: (state, join) => {
       state.join = join;
     },
-    updateHospitalization(state, hospitalization) {
+    updateHospitalization: (state, hospitalization) => {
       state.hospitalization = hospitalization;
     },
-    updateContinuation(state, continuation) {
+    updateContinuation: (state, continuation) => {
       state.continuation = continuation;
     },
-    updateMessage(state, message) {
+    updateMessage: (state, message) => {
       state.message = message;
+    },
+  },
+  actions: {
+    commitGender(store, gender) {
+      return store.commit('updateGender', gender);
+    },
+    commitYear(store, year) {
+      return store.commit('updateYear', year);
+    },
+    commitMonth(store, month) {
+      return store.commit('updateMonth', month);
+    },
+    commitDay(store, day) {
+      return store.commit('updateDay', day);
+    },
+    commitJoin(store, join) {
+      return store.commit('updateJoin', join);
+    },
+    commitHospitalization(store, hospitalization) {
+      return store.commit('updateHospitalization', hospitalization);
+    },
+    commitContinuation(store, continuation) {
+      return store.commit('updateContinuation', continuation);
+    },
+
+    commitMessage(store, message) {
+      return store.commit('updateMessage', message);
     },
   },
   getters: {

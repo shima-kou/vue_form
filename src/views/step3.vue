@@ -28,6 +28,15 @@ export default {
   components: {
     linkButton,
   },
-  computed: {},
+  computed: {
+    computedMessage: {
+      get() {
+        return this.$store.getters.getDay;
+      },
+      set(value) {
+        this.$store.dispatch('commitDay', value);
+      },
+    },
+  },
 };
 </script>
