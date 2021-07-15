@@ -42,29 +42,29 @@ export default new Vuex.Store({
   },
   actions: {
     commitGender(store, gender) {
-      return store.commit('updateGender', gender);
+      store.commit('updateGender', gender);
     },
     commitYear(store, year) {
-      return store.commit('updateYear', year);
+      store.commit('updateYear', year);
     },
     commitMonth(store, month) {
-      return store.commit('updateMonth', month);
+      store.commit('updateMonth', month);
     },
     commitDay(store, day) {
-      return store.commit('updateDay', day);
+      store.commit('updateDay', day);
     },
     commitJoin(store, join) {
-      return store.commit('updateJoin', join);
+      store.commit('updateJoin', join);
     },
     commitHospitalization(store, hospitalization) {
-      return store.commit('updateHospitalization', hospitalization);
+      store.commit('updateHospitalization', hospitalization);
     },
     commitContinuation(store, continuation) {
-      return store.commit('updateContinuation', continuation);
+      store.commit('updateContinuation', continuation);
     },
 
     commitMessage(store, message) {
-      return store.commit('updateMessage', message);
+      store.commit('updateMessage', message);
     },
   },
   getters: {
